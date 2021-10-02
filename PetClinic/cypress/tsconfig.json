@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "allowJs": true,
+        "module": "CommonJS",
+        "target": "es6",
+        "noEmit": true,
+        "types": [
+            "cypress",
+            "jquery",
+            "node"
+        ],
+        "esModuleInterop": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    },
+    "include": [
+        "**/*.js",
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
