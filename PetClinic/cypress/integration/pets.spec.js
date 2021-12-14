@@ -22,16 +22,23 @@ describe("pets", () => {
     cy.createOwner(ownerName.firstName, ownerName.lastName);
   });
 
-  it("should create new pet", () => {
-    const petName = getUniqueName().firstName;
-    const birthDate = DATE;
-    const type = PET_TYPE;
+  const createNewPetArgs = [
+    { name: getUniqueName().firstName },
+    { name: getUniqueName().firstName },
+    { name: getUniqueName().firstName },
+  ];
 
-    cy.createPet(ownerName.fullName, petName, birthDate, type);
+  createNewPetArgs.forEach(({ name: petName }) => {
+    it("should create new pet", () => {
+      const birthDate = DATE;
+      const type = PET_TYPE;
 
-    ownerDetailsPage.petBirthDate(petName).contains(birthDate);
-    ownerDetailsPage.petType(petName).contains(type);
-    cy.deletePets(ownerName.fullName);
+      cy.createPet(ownerName.fullName, petName, birthDate, type);
+
+      ownerDetailsPage.petBirthDate(petName).contains(birthDate);
+      ownerDetailsPage.petType(petName).contains(type);
+      cy.deletePets(ownerName.fullName);
+    });
   });
 
   describe("", () => {
