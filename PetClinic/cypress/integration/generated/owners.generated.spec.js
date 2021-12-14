@@ -2,7 +2,7 @@ describe("Owners", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("I create new owner", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080/");
+    cy.visit("http://20.50.171.10:8080/");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a").click();
     cy.get("h2").should("have.text", "Owners");
@@ -32,7 +32,7 @@ describe("Owners", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("Owners page accessible from header menu", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080/");
+    cy.visit("http://20.50.171.10:8080/");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a").click();
     cy.get("h2").should("have.text", "Owners");
@@ -46,7 +46,7 @@ describe("Owners", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("I update owner", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080/");
+    cy.visit("http://20.50.171.10:8080/");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a").click();
     cy.get(":nth-child(1) > .ownerFullName > a").click();
@@ -66,7 +66,7 @@ describe("Owners", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("I cancel editing of an owner", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080/");
+    cy.visit("http://20.50.171.10:8080/");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a").click();
     cy.get(":nth-child(2) > .ownerFullName > a").click();
@@ -83,7 +83,7 @@ describe("Owners", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("I see error when enter invalid values during Owner editing", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080/");
+    cy.visit("http://20.50.171.10:8080/");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a").click();
     cy.get(":nth-child(1) > .ownerFullName > a").click();

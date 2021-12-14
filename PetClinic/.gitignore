@@ -2,3 +2,5 @@ videos/
 screenshots/
 node_modules/
 .vscode/
+/allure-results
+/allure-report

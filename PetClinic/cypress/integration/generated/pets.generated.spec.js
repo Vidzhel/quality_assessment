@@ -2,7 +2,7 @@ describe("Pets", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("I create new pet", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080/");
+    cy.visit("http://20.50.171.10:8080/");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a").click();
     cy.get(":nth-child(1) > .ownerFullName > a").click();
@@ -37,7 +37,7 @@ describe("Pets", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("I delete a pet", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080");
+    cy.visit("http://20.50.171.10:8080");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a").click();
     cy.get(":nth-child(1) > .ownerFullName > a").click();
@@ -50,7 +50,7 @@ describe("Pets", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("I update pet", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080");
+    cy.visit("http://20.50.171.10:8080");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a > :nth-child(2)").click();
     cy.get(":nth-child(1) > .ownerFullName > a").click();
@@ -79,7 +79,7 @@ describe("Pets", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it("I see errors when insert invalid values during a pet edditing", function () {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit("http://20.82.57.125:8080");
+    cy.visit("http://20.50.171.10:8080");
     cy.get(":nth-child(2) > .dropdown-toggle").click();
     cy.get(".open > .dropdown-menu > :nth-child(1) > a").click();
     cy.get(":nth-child(1) > .ownerFullName > a").click();

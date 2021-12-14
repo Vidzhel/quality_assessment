@@ -8,7 +8,8 @@
         "types": [
             "cypress",
             "jquery",
-            "node"
+            "node",
+            "@shelex/cypress-allure-plugin/reporter"
         ],
         "esModuleInterop": true,
         "strict": true,
