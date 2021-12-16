@@ -21,3 +21,17 @@ threads specified). It's also possible to [run tests on separate machines](https
 when run by CI pipeline
 
 Regarding parametrization, I've created a [test called `should create new pet` with arguments `createNewPetArgs`](./cypress/integration/pets.spec.js)
+
+## Lab 8
+
+Loading of Owners page takes a lot of time due to missing pagination
+functionality. The same goes for Vets, pets lists. Also, consider adding
+autocomplete with limit for pet types select input, as loading all the types is
+inefficient
+
+![](https://i.imgur.com/bCeb06r.jpeg)
+
+Server handles load of 100 users, but fails to load owners list in
+sufficient time
+
+![](https://i.imgur.com/AgcFRUL.jpeg)
